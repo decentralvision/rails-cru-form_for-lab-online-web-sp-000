@@ -9,9 +9,9 @@ class SongsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
-    @post.update(post_params)
-    redirect_to post_path(@post)
+    @song = Song.find(params[:id])
+    @song.update(song_params)
+    redirect_to song_path(@song)
   end
 
   def create
