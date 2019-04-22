@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 
   def new
-    @post = Post.new
+    @song = Song.new
   end
 
   def edit
