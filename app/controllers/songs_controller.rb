@@ -24,6 +24,7 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
   end
 
+  private
   def song_params
     params.require(:song).permit!
   end
