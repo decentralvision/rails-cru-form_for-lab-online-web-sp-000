@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-
+  require 'pry'
   def new
     @artist = Artist.new
   end
